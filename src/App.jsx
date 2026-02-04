@@ -163,7 +163,7 @@ export default function App() {
         <Route path="/" element={
           <div className="relative min-h-screen flex items-center justify-center text-center">
             <div className="absolute inset-0 bg-cover bg-center" style={{
-              backgroundImage: "url('/src/assets/ANCCCCC.png')"
+              backgroundImage: "url('/assets/ANCCCCC.png')"
             }} />
             <div className="absolute inset-0 bg-black/40" />
             <div className="relative z-10 px-6">
