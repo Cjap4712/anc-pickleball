@@ -154,7 +154,7 @@ id: 11,
   {  id: 19,
     name: "ANC Official T-shirt",  
     price: 20,   
-    image: "/src/assets/image-shirt.jpg", 
+    image: "/assets/image-shirt.jpg", 
     description: "100% cotton t-shirt with ANC logo",
     
     

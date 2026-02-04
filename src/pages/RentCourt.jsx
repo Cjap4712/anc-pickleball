@@ -36,7 +36,7 @@ export default function RentCourt() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-black">
       {/* Hero Image Section */}
       <div className="relative h-96 md:h-[500px] bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: "url('/src/assets/Courts.jpg')"
+        backgroundImage: "url('/assets/Courts.jpg')"
       }}>
         <div className="absolute inset-0 bg-black/40" /> {/* Dark overlay */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6">
