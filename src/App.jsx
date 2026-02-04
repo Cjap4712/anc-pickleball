@@ -13,6 +13,7 @@ import About from "./pages/About";
 import RentCourt from "./pages/RentCourt";
 import Contact from "./pages/Contact";
 import { useState, useEffect } from "react";
+import OrderStatus from "./pages/OrderStatus";
 
 function Header() {
   const [cartCount, setCartCount] = useState(0);
@@ -59,15 +60,16 @@ function Header() {
           <Link to="/contact" className="hover:text-accent-blue transition whitespace-nowrap">Contact</Link>
           <Link to="/locations" className="hover:text-accent-blue transition whitespace-nowrap">Find Us</Link>
           <Link to="/faq" className="hover:text-accent-blue transition whitespace-nowrap">FAQ</Link>
+          <Link to="/order-status" className="hover:text-orange-600 font-medium">Orders</Link>
           <Link to="/reviews" className="hover:text-accent-blue transition whitespace-nowrap">Reviews</Link>
-          <Link to="/rent-court" className="hover:text-accent-blue transition whitespace-nowrap">Rent a Court</Link>
+          <Link to="/rent-court" className="hover:text-accent-blue transition whitespace-nowrap">Court Rental</Link>
         </nav>
 
         {/* Spacer */}
         <div className="flex-1 hidden md:block" />
 
         {/* Social Icons */}
-        <div className="hidden md:flex items-center gap-2 flex-shrink-0 mr-8">
+        <div className="hidden md:flex items-center gap-10 flex-shrink-0 mr-8">
           <a
             href="https://www.instagram.com/ancpickleball"
             target="_blank"
@@ -192,6 +194,7 @@ export default function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/order-status" element={<OrderStatus />} />
       </Routes>
     </BrowserRouter>
   );

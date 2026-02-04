@@ -20,7 +20,7 @@ export default function RentCourt() {
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(
-      `Thank you, ${formData.name}! Your court booking request for ${formData.date} at ${formData.time} has been submitted. We'll contact you soon! (Demo — no real booking made.)`
+      `Thank you, ${formData.name}! Your court booking request for ${formData.date} at ${formData.time} has been submitted. We'll contact you soon!`
     );
     setFormData({
       name: "",
@@ -90,7 +90,7 @@ export default function RentCourt() {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-lg font-medium mb-2">Your Name</label>
+                <label className="block text-lg text-black font-medium mb-2">Your Name</label>
                 <input
                   type="text"
                   name="name"
@@ -98,12 +98,12 @@ export default function RentCourt() {
                   onChange={handleChange}
                   required
                   placeholder="John Doe"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 text-black rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label className="block text-lg font-medium mb-2">Email</label>
+                <label className="block text-lg text-black font-medium mb-2">Email</label>
                 <input
                   type="email"
                   name="email"
@@ -111,12 +111,12 @@ export default function RentCourt() {
                   onChange={handleChange}
                   required
                   placeholder="your@email.com"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label className="block text-lg font-medium mb-2">Phone</label>
+                <label className="block text-lg text-black font-medium mb-2">Phone</label>
                 <input
                   type="tel"
                   name="phone"
@@ -124,42 +124,42 @@ export default function RentCourt() {
                   onChange={handleChange}
                   required
                   placeholder="(985) 555-1234"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-lg font-medium mb-2">Date</label>
+                  <label className="block text-lg text-black font-medium mb-2">Date</label>
                   <input
                     type="date"
                     name="date"
                     value={formData.date}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
+                    className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
                   />
                 </div>
                 <div>
-                  <label className="block text-lg font-medium mb-2">Time</label>
+                  <label className="block text-lg text-black font-medium mb-2">Time</label>
                   <input
                     type="time"
                     name="time"
                     value={formData.time}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
+                    className="w-full px-4 py-3 border text-black  border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-lg font-medium mb-2">Duration</label>
+                <label className="block text-lg text-black font-medium mb-2">Duration</label>
                 <select
                   name="duration"
                   value={formData.duration}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
+                  className="w-full px-4 py-3 border text-black border-gray-300 rounded-lg focus:ring-2 focus:ring-green-700 focus:border-transparent"
                 >
                   <option value="1">1 hour</option>
                   <option value="1.5">1.5 hours</option>

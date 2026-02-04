@@ -36,7 +36,7 @@ export default function Comparison() {
       </h1>
 
       {/* Filters */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 bg-black p-8 rounded-2xl shadow-lg">
+      <div className="grid grid-cols-2 md:grid-cols-4 text-black gap-6 mb-16 bg-white p-8 rounded-2xl shadow-lg">
         <div>
           <label className="block font-semibold mb-2">Skill Level</label>
           <select value={skill} onChange={e => setSkill(e.target.value)} className="w-full p-3 border rounded-lg">

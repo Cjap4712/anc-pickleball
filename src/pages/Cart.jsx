@@ -48,9 +48,9 @@ export default function Cart() {
             <p className="text-gray-600">{item.description}</p>
           </div>
           <div className="flex items-center gap-4">
-            <button onClick={() => updateQty(item.id, -1)} className="text-2xl">-</button>
-            <span className="text-xl font-bold">{item.qty}</span>
-            <button onClick={() => updateQty(item.id, 1)} className="text-2xl">+</button>
+            <button onClick={() => updateQty(item.id, -1)} className="text-3xl">-</button>
+            <span className="text-xl text-black font-bold">{item.qty}</span>
+            <button onClick={() => updateQty(item.id, 1)} className="text-3xl">+</button>
           </div>
           <span className="text-2xl font-bold text-black">${(item.price * item.qty).toFixed(2)}</span>
           <button onClick={() => removeItem(item.id)} className="text-red-600">

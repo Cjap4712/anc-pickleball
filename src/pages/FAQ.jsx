@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "How do I track my order?",
-    answer: "After placing an order, you'll receive a confirmation with a fake tracking number. In a live store, you'd get an email with a real tracking link. Check your order status on the Order Success page after checkout."
+    answer: "After placing an order, you'll receive a confirmation and order number. Check your order status on the order status link at the top of the home page."
   },
   {
     question: "What is your return policy?",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: "Is my data secure on this site?",
-    answer: "Yes, no personal data is collected or stored on servers. We use HTTPS and industry-standard security practices."
+    answer: "Yes, no personal data is collected or stored on our servers. We use HTTPS and industry-standard security practices."
   }
 ];
 
@@ -54,7 +54,7 @@ export default function FAQ() {
           >
             <button
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              className="w-full text-left px-6 py-5 font-semibold text-xl flex justify-between items-center hover:bg-gray-50 transition"
+              className="w-full text-left px-6 py-5 font-semibold text-xl flex justify-between items-center hover:bg-black-50 transition"
             >
               {faq.question}
               <span className="text-2xl">{openIndex === index ? "−" : "+"}</span>
